@@ -1,7 +1,7 @@
 import { AxiosInstance } from "../../utils/AxiosInstance"
 
 export const getMovies = async () => {
-   const URL = '/mba/api/v1/movies'
+   const URL = 'https://mba-3izp.onrender.com/mba/api/v1/movies'
    try {
       const response = await AxiosInstance.get(URL)
       return response
@@ -10,7 +10,7 @@ export const getMovies = async () => {
    }
 }
 export const getAMovie = async (movie) => {
-   const URL = `/mba/api/v1/movies/${movie}`
+   const URL = `https://mba-3izp.onrender.com/mba/api/v1/movies/${movie}`
    try {
       const response = await AxiosInstance.get(URL)
       return response
@@ -19,7 +19,7 @@ export const getAMovie = async (movie) => {
    }
 }
 export const removeMovie = async (movie) => {
-   const URL = `/mba/api/v1/movies/${movie._id}`
+   const URL = `https://mba-3izp.onrender.com/mba/api/v1/movies/${movie._id}`
    try {
       const response = await AxiosInstance.delete(URL, {
          headers: {
@@ -33,7 +33,7 @@ export const removeMovie = async (movie) => {
 }
 
 export const updateMovie = async (movieId, movie) => {
-   const URL = `/mba/api/v1/movies/${movieId}`;
+   const URL = `https://mba-3izp.onrender.com/mba/api/v1/movies/${movieId}`;
    try {
       const response = await AxiosInstance.put(URL, movie, {
          headers: {
@@ -47,7 +47,7 @@ export const updateMovie = async (movieId, movie) => {
 }
 
 export const createMovie = async(movie)=>{
-   const URL = '/mba/api/v1/movies'
+   const URL = 'https://mba-3izp.onrender.com/mba/api/v1/movies'
    try{
       const response = await AxiosInstance.post(URL,movie,{
          headers:{

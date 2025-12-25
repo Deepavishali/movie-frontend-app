@@ -2,7 +2,7 @@ import { AxiosInstance } from "../../utils/AxiosInstance"
 
 
 export const makePayment = async (PaymentData) => {
-   const URL = `/mba/api/v1/payments`
+   const URL = `https://mba-3izp.onrender.com/mba/api/v1/payments`
    try {
       const response = await AxiosInstance.post(URL, PaymentData, {
          headers: {

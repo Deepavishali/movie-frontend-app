@@ -1,7 +1,7 @@
 import { AxiosInstance } from "../../utils/AxiosInstance"
 
 export const getUsers = async () => {
-   const URL = '/mba/api/v1/users'
+   const URL = 'https://mba-3izp.onrender.com/mba/api/v1/users'
    try {
       const response = await AxiosInstance.get(URL, {
          headers: {

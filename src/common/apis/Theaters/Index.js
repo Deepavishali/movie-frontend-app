@@ -1,7 +1,7 @@
 import { AxiosInstance } from "../../utils/AxiosInstance"
 
 export const getTheaters = async () => {
-   const URL = '/mba/api/v1/theatres'
+   const URL = 'https://mba-3izp.onrender.com/mba/api/v1/theatres'
    try {
       const response = await AxiosInstance.get(URL)
       return response
@@ -10,7 +10,7 @@ export const getTheaters = async () => {
    }
 }
 export const getATheater = async (movieId) => {
-   const URL = `/mba/api/v1/theatres/${movieId}`
+   const URL = `https://mba-3izp.onrender.com/mba/api/v1/theatres/${movieId}`
    try {
       const response = await AxiosInstance.get(URL, {
          headers: {
@@ -23,7 +23,7 @@ export const getATheater = async (movieId) => {
    }
 }
 export const removeTheater = async (theatres) => {
-   const URL = `/mba/api/v1/theatres/${theatres._id}`
+   const URL = `https://mba-3izp.onrender.com/mba/api/v1/theatres/${theatres._id}`
    try {
       const response = await AxiosInstance.delete(URL, {
          headers: {
@@ -37,7 +37,7 @@ export const removeTheater = async (theatres) => {
 }
 
 export const updateTheater = async (theatreId, theatredata) => {
-   const URL = `/mba/api/v1/theatres/${theatreId}`;
+   const URL = `https://mba-3izp.onrender.com/mba/api/v1/theatres/${theatreId}`;
    try {
       const response = await AxiosInstance.put(URL, theatredata, {
          headers: {
@@ -53,7 +53,7 @@ export const updateTheater = async (theatreId, theatredata) => {
 }
 
 export const createTheater = async (theatre) => {
-   const URL = '/mba/api/v1/theatres'
+   const URL = 'https://mba-3izp.onrender.com/mba/api/v1/theatres'
    try {
       const response = await AxiosInstance.post(URL, theatre,{
          headers: {
